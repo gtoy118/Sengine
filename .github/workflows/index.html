@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          .gs-imagePreviewArea {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    background: #222;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    z-index: 100000;
+    border-radius: 15px;
+}
+          .gs-imageResult .gs-image-box .gs-image {
+    border: none;
+    border-radius: 15px;
+}
+        .gsc-inline-block {
+    display: inline-block;
+    border-radius: 15px;
+    background: lightgray;
+}
+
+            .gsc-results-wrapper-overlay.gsc-results-wrapper-visible {
+              border-radius: 20px;
+            }
+            div#gsc-iw-id1 {
+                border-radius: 15px;
+            }
+
+            button.gsc-search-button.gsc-search-button-v2 {
+                border-radius: 15px;
+            }
+
+            .gsc-control-cse {
+                background:transparent !important; /* enforce this rule; do not allow override */
+                border-color:transparent !important; /* border color */
+            }
+
+            #search {
+                width:100%; 
+                border-radius: 15px; 
+                background-color: #668c8c8c; 
+                margin-top: 30px;
+            }
+
+            body {
+              font-family: Arial;
+              padding: 0px;
+              background: url(gradient.jpg) no-repeat center fixed;
+              background-size: cover;
+            }
+            
+            ul {
+              border-radius: 15px;
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #668c8c8c;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a, .dropbtn {
+              border-radius: 15px;
+              display: inline-block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover, .dropdown:hover .dropbtn {
+              background-color: grey;
+            }
+            
+            li.dropdown {
+              border-radius: 15px;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              border-radius: 15px;
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              border-radius: 15px;
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }
+            
+            .dropdown-content a:hover {
+              background-color: #f1f1f1;
+            }
+            
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+            </style>
+        <title>Sengine Search</title>
+        <link href="favicon.ico" rel="icon" type="image/x-icon">
+    </head>
+    <body>
+        <ul>
+            <li style="float:center"class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Apps</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+          </ul>
+        <script async src="cse.js" id="search"></script>
+        <div class="gcse-search"></div>
+    </body>
+</html>
